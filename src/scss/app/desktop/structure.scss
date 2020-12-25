@@ -1,0 +1,164 @@
+.structure {
+  background-color: $color-white;
+  box-shadow: 0.648305px 1.94492px 7.77966px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  padding: 25px 44px 69px 19px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+}
+
+.structure-icon {
+  position: absolute;
+  right: -27px;
+  transition: all 0.5s ease;
+  transform: rotate(180deg);
+
+  &.active {
+    transform: rotate(0);
+  }
+}
+
+.structure-first {
+
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    position: relative;
+
+
+  }
+
+  &__title {
+    color: #454460;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  &__content {
+
+    display: flex;
+
+
+    & > span {
+      padding: 3px;
+      font-family: $font-bold;
+      font-size: 7px;
+      border-radius: 1px;
+      display: inline-block;
+    }
+
+    & > span:not(:last-child) {
+      margin-right: 3px;
+    }
+
+    & > span:nth-child(1) {
+      background-color: #F2F0FE;
+      color: #826CFC;
+    }
+
+    & > span:nth-child(2) {
+      background-color: #C0E8FF;
+      color: #0085FF;
+    }
+
+    & > span:nth-child(3) {
+      background-color: #D7FFE2;;
+      color: #54B806;
+    }
+
+    & > span:nth-child(4) {
+      background-color: #FFF9C7;
+      color: #D4A707;
+    }
+  }
+}
+
+.structure-second {
+
+  display: none;
+
+  &--mt {
+    margin-top: 13px;
+  }
+
+  &__item {
+
+  }
+
+  &__menu {
+    color: #828094;
+    padding-left: 29px;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    & > li {
+      font-size: 7px;
+    }
+
+    & > li:not(:last-child) {
+      margin-right: 3px;
+
+    }
+
+    & > li:nth-child(1) {
+      color: #54B806;
+      padding: 3px;
+      font-family: $font-bold;
+      font-size: 7px;
+      border-radius: 1px;
+      display: inline-block;
+    }
+
+    & > li:nth-child(2) {
+      color: #D4A707;
+      padding: 3px;
+      font-family: $font-bold;
+      font-size: 7px;
+      border-radius: 1px;
+      display: inline-block;
+    }
+
+  }
+}
+
+.structure-third {
+  list-style-type: none;
+  margin: 0;
+  display: none;
+
+  & > li {
+    position: relative;
+
+    &:before {
+      content: '-';
+      position: absolute;
+      left: -12px;
+    }
+  }
+}
+
+.reset-ul {
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &.active {
+    color: #507FF9;
+  }
+}

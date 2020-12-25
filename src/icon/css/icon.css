@@ -1,0 +1,59 @@
+@font-face {
+    font-family: icomoon;
+    src: url(../fonts/icomoon.eot?jowxwy);
+    src: url(../fonts/icomoon.eot?jowxwy#iefix) format('embedded-opentype'), url(../fonts/icomoon.ttf?jowxwy) format('truetype'), url(../fonts/icomoon.woff?jowxwy) format('woff'), url(../fonts/icomoon.svg?jowxwy#icomoon) format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+[class*=" icon-"], [class^=icon-] {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-info:before {
+    content: "\e902";
+    color: #507ff9;
+}
+.icon-mail:before {
+    content: "\e903";
+    color: #507ff9;
+}
+.icon-new-chat:before {
+    content: "\e904";
+}
+.icon-new-contact:before {
+    content: "\e905";
+}
+.icon-new-dashboard:before {
+    content: "\e906";
+}
+.icon-new-envelope:before {
+    content: "\e907";
+}
+.icon-notification:before {
+    content: "\e908";
+    color: #cacccf;
+}
+.icon-settings:before {
+    content: "\e909";
+    /*color: #c2cfe0;*/
+}
+.icon-close:before {
+    content: "\e90f";
+    color: #78809d;
+}
+.icon-new-envelope1:before {
+    content: "\e912";
+}
+.icon-dashboard-new:before {
+    content: "\e915";
+}

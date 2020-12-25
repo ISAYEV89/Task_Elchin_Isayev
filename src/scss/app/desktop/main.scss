@@ -1,0 +1,156 @@
+.main {
+
+  width: 82%;
+
+  &--bg {
+    background-color: #FDFDFD;
+  }
+
+  &--mb {
+    padding-bottom: 100px;
+  }
+
+}
+
+.main-header {
+  padding: 10px 27px 10px 37px;
+  border-bottom: 1px solid $color-grey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+
+  &__notification {
+    margin-right: 26px;
+    position: relative;
+
+    & > img {
+      width: 24px;
+      height: 24px;
+    }
+
+    & > .active {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #FF6760;
+      border: 2px solid #F6F8FB;
+      border-radius: 50%;
+      right: -8px;
+      top: -3px;
+    }
+
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+
+.main-content {
+  padding-left: 27px;
+  padding-right: 37px;
+
+
+  &__search {
+    padding-top: 13px;
+  }
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 71px;
+
+  &__input-block {
+    display: flex;
+    align-items: center;
+
+    /* & > .search-form__label:not(:last-child) {
+       margin-right: 52px;
+     }*/
+  }
+
+  &__label {
+    margin-bottom: 0;
+    width: 100%;
+
+  }
+
+  &__input {
+    height: 45px;
+    //width: 236px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E3E8EF;
+    border-radius: 7px;
+    padding: 13px 16px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid #4F9BFF;
+    }
+
+    &::placeholder {
+      font-size: 15px;
+      color: #ABB6C5;
+    }
+  }
+
+  &__submit {
+    min-width: 128px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    color: $color-white;
+    background: linear-gradient(180deg, #00C6FF -144.44%, #0072FF 233.33%);
+    transition: all 5s ease;
+
+    &:hover {
+      background: linear-gradient(180deg, #1088AA -144.44%, #0072FF 233.33%);
+    }
+  }
+}
+
+.main-breadcrumbs {
+  display: flex;
+
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--mr {
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+
+  &--width {
+    width: 120px;
+  }
+
+  &__icon {
+    background-color: #96C1F9;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-right: 17px;
+  }
+
+  &__img {
+    width: 8px;
+  }
+
+  &__title {
+    color: #A5A8B2;
+
+  }
+}
